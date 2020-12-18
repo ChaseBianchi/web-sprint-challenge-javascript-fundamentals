@@ -62,10 +62,11 @@ const zooAnimals = [
 
   function animalNames(arr){
     const newArr=[];
-    for(let i=0;i<arr.length;i++){
-      newArr.push(`name: ${arr[i].animal_name}, scientific: ${arr[i].scientific_name}`)
-    }
-    return newArr
+    arr.forEach(x => newArr.push(`name: ${x.animal_name}, scientific: ${x.scientific_name}`));
+    // for(let i=0;i<arr.length;i++){
+    //   newArr.push(`name: ${arr[i].animal_name}, scientific: ${arr[i].scientific_name}`)
+    // }
+    return newArr;
   }
   
 
