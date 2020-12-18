@@ -1,6 +1,7 @@
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
+//all functions, except 'new function' have closure, which means they can access outter variables.
 
 const external = "I'm outside the function";
 
