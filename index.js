@@ -105,6 +105,15 @@ const zooAnimals = [
     // return arr.population.reduce(function(total, amount){
     //   return total+amount
     // });
+    // const counter=(accumulator, currentValue) => accumulator + currentValue;
+//     arr.reduce((acc,curr) => {
+//       return acc+curr;
+//     },0);
+
+//   }
+// console.log(arr.reduce((acc,curr) => {
+//       return acc+curr;
+//     },0);)
     let count=0;
     for(let i=0;i<arr.length;i++){
       count+=arr[i].population;
