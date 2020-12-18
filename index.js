@@ -102,6 +102,11 @@ const zooAnimals = [
   */
 
   function USApop(arr){
+   let population=arr.reduce(function(acc,x){
+     return acc + x.population;
+   },0);
+   return population;
+  }
     // return arr.population.reduce(function(total, amount){
     //   return total+amount
     // });
@@ -114,12 +119,13 @@ const zooAnimals = [
 // console.log(arr.reduce((acc,curr) => {
 //       return acc+curr;
 //     },0);)
-    let count=0;
-    for(let i=0;i<arr.length;i++){
-      count+=arr[i].population;
-    }
-    return count;
-    }
+
+    // let count=0;
+    // for(let i=0;i<arr.length;i++){
+    //   count+=arr[i].population;
+    // }
+    // return count;
+  
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
